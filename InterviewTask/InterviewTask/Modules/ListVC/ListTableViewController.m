@@ -67,6 +67,7 @@
     
     id listItem = viewModel.items[indexPath.row];
     // Configure the cell...
+    //NSLog(@"Item name = %@", listItem.displayName);
     [cell setItem:listItem];
     
     return cell;

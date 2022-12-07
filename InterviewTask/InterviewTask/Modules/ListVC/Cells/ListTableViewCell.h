@@ -6,12 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ListCellViewModel.h"
+#import "ListViewItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ListTableViewCell : UITableViewCell
--(void)setItem:(ListCellViewModel*)item;
+-(void)setItem:(id<ListViewItem>_Nonnull)item;
 @end
 
 NS_ASSUME_NONNULL_END

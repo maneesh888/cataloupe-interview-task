@@ -20,7 +20,7 @@
 
     // Configure the view for the selected state
 }
--(void)setItem:(id<ListViewItem>)item{
-    [self setText:item.name];
+-(void)setItem:(id<ListViewItem>_Nonnull)item{
+    [self setText:item.displayName];
 }
 @end

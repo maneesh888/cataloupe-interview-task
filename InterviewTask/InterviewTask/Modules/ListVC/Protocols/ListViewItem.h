@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, ListViewCellType) {
 
 @protocol ListViewItem
 
-@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSString *displayName;
 @property (nonatomic, readonly) NSString *email;
 @property (nonatomic, readonly) NSString *country;
 @property (nonatomic, readonly) NSString *imageUrl;

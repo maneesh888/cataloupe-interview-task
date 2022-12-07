@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface ListTableViewController : UITableViewController <ListViewModelDelegate>
-@property (nonatomic, retain) NSArray<ListViewItem> *dataSource;
 @property (nonatomic, retain) ListViewModel *viewModel;
 
 @end
