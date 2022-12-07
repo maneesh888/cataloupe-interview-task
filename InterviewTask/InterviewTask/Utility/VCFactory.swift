@@ -10,6 +10,12 @@ import UIKit
 
 struct VCFactory {
     
+    static func getHomeViewController() -> HomeViewController? {
+        let vc: HomeViewController = HomeViewController(nibName: String(describing:HomeViewController.self), bundle: nil)
+        
+        return vc
+    }
+    
     static func getListViewController() -> ListTableViewController? {
         
         let listServiceAdaptor:ListServiceAdaptorProtocol = UserService()

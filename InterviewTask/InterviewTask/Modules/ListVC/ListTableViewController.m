@@ -42,7 +42,7 @@
     
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
     });
     
 }
