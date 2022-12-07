@@ -9,8 +9,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ListTableViewController : UITableViewController
+@protocol ListViewItem
 
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *email;
+@property (nonatomic, retain) NSString *country;
+@property (nonatomic, retain) NSString *imageUrl;
+
+@end
+
+
+@interface ListTableViewController : UITableViewController
+@property (nonatomic, retain) NSArray<ListViewItem> *dataSource;
 @end
 
 NS_ASSUME_NONNULL_END
