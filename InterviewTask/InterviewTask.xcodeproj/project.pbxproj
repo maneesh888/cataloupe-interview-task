@@ -111,6 +111,23 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		9F904EE32940F6AF00797EC0 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				9F904EE42940F70600797EC0 /* Offline */,
+				9F356D1929408E9200AA4258 /* Model */,
+				9F356D1629408CA700AA4258 /* Service */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		9F904EE42940F70600797EC0 /* Offline */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Offline;
+			sourceTree = "<group>";
+		};
 		9FCE2CC329406593002DAA85 = {
 			isa = PBXGroup;
 			children = (
@@ -148,8 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				9F904EDE2940F42F00797EC0 /* Home */,
-				9F356D1929408E9200AA4258 /* Model */,
-				9F356D1629408CA700AA4258 /* Service */,
+				9F904EE32940F6AF00797EC0 /* UserList */,
 				9FCE2CE9294067C2002DAA85 /* ListVC */,
 			);
 			path = Modules;

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="InterviewTask" customModuleProvider="target">
             <connections>
+                <outlet property="textView" destination="xHl-2q-XCx" id="ZbR-Yd-xhU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,10 +43,26 @@
                         </button>
                     </subviews>
                 </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="https://randomuser.me/api/?seed=abc&amp;inc=picture,name,email,nat,id,registered,dob&amp;results=100" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xHl-2q-XCx">
+                    <rect key="frame" x="16" y="60" width="382" height="271.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="xHl-2q-XCx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0NX-rH-GQT"/>
+                <constraint firstItem="xHl-2q-XCx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yhm-jI-luD"/>
+                <constraint firstItem="xHl-2q-XCx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="dGd-GV-gqf"/>
+                <constraint firstItem="LiI-Ie-zKk" firstAttribute="top" secondItem="xHl-2q-XCx" secondAttribute="bottom" constant="50" id="jZL-5e-qzJ"/>
                 <constraint firstItem="LiI-Ie-zKk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nb3-kY-YJt"/>
                 <constraint firstItem="LiI-Ie-zKk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rFF-en-UxV"/>
             </constraints>
@@ -53,6 +70,9 @@
         </view>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

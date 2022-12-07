@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +28,7 @@ class HomeViewController: UIViewController {
     */
 
     @IBAction func didTapOnlineListButton(_ sender: Any) {
-        if let vc = VCFactory.getListViewController() {
+        if let url = textView.text,  let vc = VCFactory.getListViewController(for: url) {
             show(vc, sender: self)
         }
     }
