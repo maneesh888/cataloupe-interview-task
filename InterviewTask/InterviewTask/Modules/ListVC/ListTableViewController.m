@@ -6,7 +6,7 @@
 //
 
 #import "ListTableViewController.h"
-#import "ListTableViewCell.h"
+#import "UserTableViewCell.h"
 
 @interface ListTableViewController ()
 
@@ -63,7 +63,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListTableViewCell" forIndexPath:indexPath];
+    UserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListTableViewCell" forIndexPath:indexPath];
     
     id listItem = viewModel.items[indexPath.row];
     // Configure the cell...
@@ -73,7 +73,10 @@
     return cell;
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   return 90;
+}
 
 /*
 // Override to support conditional editing of the table view.

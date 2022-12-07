@@ -12,7 +12,7 @@
 		9F356D1829408D1700AA4258 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F356D1729408D1700AA4258 /* UserService.swift */; };
 		9F356D1B29408EA100AA4258 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F356D1A29408EA100AA4258 /* User.swift */; };
 		9F356D1F294094AA00AA4258 /* LocaleUtililty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F356D1E294094AA00AA4258 /* LocaleUtililty.swift */; };
-		9F4F864C2940796C003CD7D7 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F864A2940796C003CD7D7 /* ListTableViewCell.m */; };
+		9F4F864C2940796C003CD7D7 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F864A2940796C003CD7D7 /* UserTableViewCell.m */; };
 		9F4F864D2940796C003CD7D7 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4F864B2940796C003CD7D7 /* ListTableViewCell.xib */; };
 		9FCE2CD029406593002DAA85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2CCF29406593002DAA85 /* AppDelegate.swift */; };
 		9FCE2CD229406593002DAA85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2CD129406593002DAA85 /* SceneDelegate.swift */; };
@@ -32,8 +32,8 @@
 		9F356D1A29408EA100AA4258 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9F356D1D29408F7200AA4258 /* ListViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewItem.h; sourceTree = "<group>"; };
 		9F356D1E294094AA00AA4258 /* LocaleUtililty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleUtililty.swift; sourceTree = "<group>"; };
-		9F4F86492940796C003CD7D7 /* ListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
-		9F4F864A2940796C003CD7D7 /* ListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		9F4F86492940796C003CD7D7 /* UserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		9F4F864A2940796C003CD7D7 /* UserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
 		9F4F864B2940796C003CD7D7 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		9F89F5072940B883006BF9BB /* ListServiceAdaptorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListServiceAdaptorProtocol.h; sourceTree = "<group>"; };
 		9FCE2CCC29406593002DAA85 /* InterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,8 +91,8 @@
 		9F4F864829407913003CD7D7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				9F4F86492940796C003CD7D7 /* ListTableViewCell.h */,
-				9F4F864A2940796C003CD7D7 /* ListTableViewCell.m */,
+				9F4F86492940796C003CD7D7 /* UserTableViewCell.h */,
+				9F4F864A2940796C003CD7D7 /* UserTableViewCell.m */,
 				9F4F864B2940796C003CD7D7 /* ListTableViewCell.xib */,
 			);
 			path = Cells;
@@ -257,7 +257,7 @@
 				9F356D0E2940801100AA4258 /* ListViewModel.m in Sources */,
 				9FCE2CDA29406593002DAA85 /* InterviewTask.xcdatamodeld in Sources */,
 				9FCE2CF12940689B002DAA85 /* VCFactory.swift in Sources */,
-				9F4F864C2940796C003CD7D7 /* ListTableViewCell.m in Sources */,
+				9F4F864C2940796C003CD7D7 /* UserTableViewCell.m in Sources */,
 				9FCE2CD229406593002DAA85 /* SceneDelegate.swift in Sources */,
 				9F356D1B29408EA100AA4258 /* User.swift in Sources */,
 				9F356D1F294094AA00AA4258 /* LocaleUtililty.swift in Sources */,
