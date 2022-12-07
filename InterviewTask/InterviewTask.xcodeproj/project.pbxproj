@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9F356D0B29407E3700AA4258 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9F356D0A29407E3700AA4258 /* SDWebImage */; };
+		9F356D0E2940801100AA4258 /* ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F356D0D2940801000AA4258 /* ListViewModel.m */; };
+		9F356D1829408D1700AA4258 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F356D1729408D1700AA4258 /* UserService.swift */; };
+		9F356D1B29408EA100AA4258 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F356D1A29408EA100AA4258 /* User.swift */; };
+		9F356D1F294094AA00AA4258 /* LocaleUtililty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F356D1E294094AA00AA4258 /* LocaleUtililty.swift */; };
 		9F4F864C2940796C003CD7D7 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F864A2940796C003CD7D7 /* ListTableViewCell.m */; };
 		9F4F864D2940796C003CD7D7 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4F864B2940796C003CD7D7 /* ListTableViewCell.xib */; };
 		9FCE2CD029406593002DAA85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2CCF29406593002DAA85 /* AppDelegate.swift */; };
@@ -22,9 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F356D0C2940801000AA4258 /* ListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewModel.h; sourceTree = "<group>"; };
+		9F356D0D2940801000AA4258 /* ListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewModel.m; sourceTree = "<group>"; };
+		9F356D1729408D1700AA4258 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		9F356D1A29408EA100AA4258 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9F356D1D29408F7200AA4258 /* ListViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewItem.h; sourceTree = "<group>"; };
+		9F356D1E294094AA00AA4258 /* LocaleUtililty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleUtililty.swift; sourceTree = "<group>"; };
 		9F4F86492940796C003CD7D7 /* ListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
 		9F4F864A2940796C003CD7D7 /* ListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
 		9F4F864B2940796C003CD7D7 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		9F89F5072940B883006BF9BB /* ListServiceAdaptorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListServiceAdaptorProtocol.h; sourceTree = "<group>"; };
 		9FCE2CCC29406593002DAA85 /* InterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE2CCF29406593002DAA85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FCE2CD129406593002DAA85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F356D1629408CA700AA4258 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9F356D1729408D1700AA4258 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9F356D1929408E9200AA4258 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F356D1A29408EA100AA4258 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F356D1C29408F5100AA4258 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9F356D1D29408F7200AA4258 /* ListViewItem.h */,
+				9F89F5072940B883006BF9BB /* ListServiceAdaptorProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		9F4F864829407913003CD7D7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +119,6 @@
 			children = (
 				9FCE2CF329406A10002DAA85 /* Extensions */,
 				9FCE2CE7294066CC002DAA85 /* Modules */,
-				9FCE2CE629406693002DAA85 /* Legacy */,
 				9FCE2CCF29406593002DAA85 /* AppDelegate.swift */,
 				9FCE2CD129406593002DAA85 /* SceneDelegate.swift */,
 				9FCE2CDB29406595002DAA85 /* Assets.xcassets */,
@@ -96,36 +131,35 @@
 			path = InterviewTask;
 			sourceTree = "<group>";
 		};
-		9FCE2CE629406693002DAA85 /* Legacy */ = {
-			isa = PBXGroup;
-			children = (
-				9FCE2CE9294067C2002DAA85 /* Modules */,
-			);
-			path = Legacy;
-			sourceTree = "<group>";
-		};
 		9FCE2CE7294066CC002DAA85 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9F356D1929408E9200AA4258 /* Model */,
+				9F356D1629408CA700AA4258 /* Service */,
+				9FCE2CE9294067C2002DAA85 /* ListVC */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		9FCE2CE9294067C2002DAA85 /* Modules */ = {
+		9FCE2CE9294067C2002DAA85 /* ListVC */ = {
 			isa = PBXGroup;
 			children = (
+				9F356D1C29408F5100AA4258 /* Protocols */,
 				9F4F864829407913003CD7D7 /* Cells */,
 				9FCE2CEB2940680F002DAA85 /* ListTableViewController.h */,
 				9FCE2CEC2940680F002DAA85 /* ListTableViewController.m */,
 				9FCE2CED2940680F002DAA85 /* ListTableViewController.xib */,
+				9F356D0C2940801000AA4258 /* ListViewModel.h */,
+				9F356D0D2940801000AA4258 /* ListViewModel.m */,
 			);
-			path = Modules;
+			path = ListVC;
 			sourceTree = "<group>";
 		};
 		9FCE2CF2294068A1002DAA85 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				9FCE2CF02940689B002DAA85 /* VCFactory.swift */,
+				9F356D1E294094AA00AA4258 /* LocaleUtililty.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -219,10 +253,14 @@
 			files = (
 				9FCE2CD029406593002DAA85 /* AppDelegate.swift in Sources */,
 				9FCE2CF529406A33002DAA85 /* UIViewControllerExtension.swift in Sources */,
+				9F356D1829408D1700AA4258 /* UserService.swift in Sources */,
+				9F356D0E2940801100AA4258 /* ListViewModel.m in Sources */,
 				9FCE2CDA29406593002DAA85 /* InterviewTask.xcdatamodeld in Sources */,
 				9FCE2CF12940689B002DAA85 /* VCFactory.swift in Sources */,
 				9F4F864C2940796C003CD7D7 /* ListTableViewCell.m in Sources */,
 				9FCE2CD229406593002DAA85 /* SceneDelegate.swift in Sources */,
+				9F356D1B29408EA100AA4258 /* User.swift in Sources */,
+				9F356D1F294094AA00AA4258 /* LocaleUtililty.swift in Sources */,
 				9FCE2CEE2940680F002DAA85 /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

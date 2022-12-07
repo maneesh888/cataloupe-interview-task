@@ -9,6 +9,7 @@
 
 @implementation ListTableViewCell
 
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -19,5 +20,7 @@
 
     // Configure the view for the selected state
 }
-
+-(void)setItem:(id<ListViewItem>)item{
+    [self setText:item.name];
+}
 @end

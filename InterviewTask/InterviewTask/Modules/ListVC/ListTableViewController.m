@@ -6,6 +6,7 @@
 //
 
 #import "ListTableViewController.h"
+#import "ListTableViewCell.h"
 
 @interface ListTableViewController ()
 
@@ -13,7 +14,7 @@
 
 @implementation ListTableViewController
 
-@synthesize dataSource;
+@synthesize viewModel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,32 +24,54 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self decorate];
+    [self.viewModel fetchData];
+    
+  
+}
+
+-(void)decorate {
     self.title = @"List";
     [self.tableView registerNib:[UINib nibWithNibName:@"ListTableViewCell" bundle:nil]
        forCellReuseIdentifier:@"ListTableViewCell"];
+    viewModel.delegate = self;
+}
+
+- (void)dataUpdated {
+    
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
+    
+}
+
+- (void)errorOccured:(nonnull NSError *)error {
+    NSLog(@"Error Occured");
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 5;//dataSource.count;
+    return viewModel.items.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListTableViewCell" forIndexPath:indexPath];
+    ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListTableViewCell" forIndexPath:indexPath];
     
+    id listItem = viewModel.items[indexPath.row];
     // Configure the cell...
-    [cell.textLabel setText:@"Working"];
+    [cell setItem:listItem];
     
     return cell;
 }
+
 
 
 /*
