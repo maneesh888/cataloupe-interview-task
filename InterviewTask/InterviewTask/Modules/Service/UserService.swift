@@ -10,7 +10,7 @@ import Foundation
 
 @objc final class UserService: NSObject, ListServiceAdaptorProtocol {
     
-    let urlString = "https://randomuser.me/api/?page=3&results=10&seed=abc&inc=picture,name,email,nat,id,registered,dob"
+    let urlString = "https://randomuser.me/api/?seed=abc&inc=picture,name,email,nat,id,registered,dob&results=100"
     
     func getListWithSuccess(_ successCompletion: (([ListViewItem]?) -> Void)!, error errorCompletion: ((Error?) -> Void)!) {
         

@@ -117,8 +117,9 @@
 		9FCE2CCE29406593002DAA85 /* InterviewTask */ = {
 			isa = PBXGroup;
 			children = (
-				9FCE2CF329406A10002DAA85 /* Extensions */,
 				9FCE2CE7294066CC002DAA85 /* Modules */,
+				9FCE2CF2294068A1002DAA85 /* Utility */,
+				9FCE2CF329406A10002DAA85 /* Extensions */,
 				9FCE2CCF29406593002DAA85 /* AppDelegate.swift */,
 				9FCE2CD129406593002DAA85 /* SceneDelegate.swift */,
 				9FCE2CDB29406595002DAA85 /* Assets.xcassets */,
@@ -126,7 +127,6 @@
 				9FCE2CEA2940680F002DAA85 /* InterviewTask-Bridging-Header.h */,
 				9FCE2CE029406595002DAA85 /* Info.plist */,
 				9FCE2CD829406593002DAA85 /* InterviewTask.xcdatamodeld */,
-				9FCE2CF2294068A1002DAA85 /* Utility */,
 			);
 			path = InterviewTask;
 			sourceTree = "<group>";
