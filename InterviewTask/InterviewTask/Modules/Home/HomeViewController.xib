@@ -50,21 +50,30 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornreRadius">
+                            <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vix-1L-wkM">
+                    <rect key="frame" x="174" y="339.5" width="66" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
             <constraints>
                 <constraint firstItem="xHl-2q-XCx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0NX-rH-GQT"/>
+                <constraint firstItem="vix-1L-wkM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Acl-2l-jhS"/>
                 <constraint firstItem="xHl-2q-XCx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yhm-jI-luD"/>
                 <constraint firstItem="xHl-2q-XCx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="dGd-GV-gqf"/>
                 <constraint firstItem="LiI-Ie-zKk" firstAttribute="top" secondItem="xHl-2q-XCx" secondAttribute="bottom" constant="50" id="jZL-5e-qzJ"/>
                 <constraint firstItem="LiI-Ie-zKk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nb3-kY-YJt"/>
+                <constraint firstItem="vix-1L-wkM" firstAttribute="top" secondItem="xHl-2q-XCx" secondAttribute="bottom" constant="8" id="qP6-yz-DqM"/>
                 <constraint firstItem="LiI-Ie-zKk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rFF-en-UxV"/>
+                <constraint firstItem="LiI-Ie-zKk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vix-1L-wkM" secondAttribute="bottom" constant="8" id="tlE-y5-wbt"/>
             </constraints>
             <point key="canvasLocation" x="139" y="74"/>
         </view>
@@ -75,6 +84,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
