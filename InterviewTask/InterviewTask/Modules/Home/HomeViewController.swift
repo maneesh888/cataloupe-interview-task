@@ -28,7 +28,13 @@ class HomeViewController: UIViewController {
     */
 
     @IBAction func didTapOnlineListButton(_ sender: Any) {
-        if let url = textView.text,  let vc = VCFactory.getListViewController(for: url) {
+        if let url = textView.text,  let vc = VCFactory.getListViewController(fetchType: .online, URLString: url) {
+            show(vc, sender: self)
+        }
+    }
+    
+    @IBAction func didTapOfflineListButton(_ sender: Any) {
+        if let vc = VCFactory.getListViewController(fetchType: .mock) {
             show(vc, sender: self)
         }
     }

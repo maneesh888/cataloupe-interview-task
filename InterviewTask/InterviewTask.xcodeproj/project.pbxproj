@@ -16,6 +16,7 @@
 		9F4F864D2940796C003CD7D7 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4F864B2940796C003CD7D7 /* ListTableViewCell.xib */; };
 		9F904EE12940F48400797EC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F904EDF2940F48400797EC0 /* HomeViewController.swift */; };
 		9F904EE22940F48400797EC0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F904EE02940F48400797EC0 /* HomeViewController.xib */; };
+		9F904EE72941024300797EC0 /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F904EE52940FE7500797EC0 /* mockData.json */; };
 		9FCE2CD029406593002DAA85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2CCF29406593002DAA85 /* AppDelegate.swift */; };
 		9FCE2CD229406593002DAA85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2CD129406593002DAA85 /* SceneDelegate.swift */; };
 		9FCE2CDA29406593002DAA85 /* InterviewTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2CD829406593002DAA85 /* InterviewTask.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 		9F89F5072940B883006BF9BB /* ListServiceAdaptorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListServiceAdaptorProtocol.h; sourceTree = "<group>"; };
 		9F904EDF2940F48400797EC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9F904EE02940F48400797EC0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9F904EE52940FE7500797EC0 /* mockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockData.json; sourceTree = "<group>"; };
 		9FCE2CCC29406593002DAA85 /* InterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE2CCF29406593002DAA85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FCE2CD129406593002DAA85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				9F356D1729408D1700AA4258 /* UserService.swift */,
+				9F904EE52940FE7500797EC0 /* mockData.json */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				9FCE2CDF29406595002DAA85 /* LaunchScreen.storyboard in Resources */,
 				9F4F864D2940796C003CD7D7 /* ListTableViewCell.xib in Resources */,
 				9F904EE22940F48400797EC0 /* HomeViewController.xib in Resources */,
+				9F904EE72941024300797EC0 /* mockData.json in Resources */,
 				9FCE2CDC29406595002DAA85 /* Assets.xcassets in Resources */,
 				9FCE2CEF2940680F002DAA85 /* ListTableViewController.xib in Resources */,
 			);

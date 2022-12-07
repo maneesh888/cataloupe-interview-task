@@ -16,9 +16,9 @@ struct VCFactory {
         return vc
     }
     
-    static func getListViewController(for URLString:String) -> ListTableViewController? {
+    static func getListViewController(fetchType:UserServiceFetchType = .online, URLString:String? = nil) -> ListTableViewController? {
         
-        let listServiceAdaptor:ListServiceAdaptorProtocol = UserService(urlString: URLString)
+        let listServiceAdaptor:ListServiceAdaptorProtocol = UserService(fetchType: fetchType, urlString: URLString)
         let viewModel = ListViewModel(listServiceAdaptor)
         
         let vc: ListTableViewController = ListTableViewController(nibName: String(describing:ListTableViewController.self), bundle: nil)
@@ -26,6 +26,7 @@ struct VCFactory {
         
         return vc
     }
+    
 }
 
 
