@@ -86,25 +86,22 @@ enum UserServiceFetchType {
         
         let context: NSManagedObjectContext = CoreDataManager.shared.getContext()
         
-        let fetchReq:NSFetchRequest<UserList> = UserList.fetchRequest()
-        
-        do {
-            fetchResults = try context.fetch(fetchReq)
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-            errorCompletion(error)
-        }
-        print(fetchResults.first?.results?.count)
-        
-//        if let result = fetchResults.first?.results {
-//            re
-//        }
-        
-//        successCompletion(result)
-        if let results = fetchResults.first?.results {
-            successCompletion(Array(_immutableCocoaArray: results))
-        }else{
-            successCompletion([])
+        context.perform {
+            let fetchReq:NSFetchRequest<UserList> = UserList.fetchRequest()
+            
+            do {
+                fetchResults = try context.fetch(fetchReq)
+            } catch let error as NSError {
+                print("Could not fetch. \(error), \(error.userInfo)")
+                errorCompletion(error)
+            }
+            print(fetchResults.first?.results?.count)
+            
+            if let results = fetchResults.first?.results {
+                successCompletion(Array(_immutableCocoaArray: results))
+            }else{
+                successCompletion([])
+            }
         }
         
     }

@@ -145,18 +145,10 @@
 		9F904EE32940F6AF00797EC0 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
-				9F904EE42940F70600797EC0 /* Offline */,
 				9F356D1929408E9200AA4258 /* Model */,
 				9F356D1629408CA700AA4258 /* Service */,
 			);
 			path = UserList;
-			sourceTree = "<group>";
-		};
-		9F904EE42940F70600797EC0 /* Offline */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Offline;
 			sourceTree = "<group>";
 		};
 		9FCE2CC329406593002DAA85 = {
