@@ -38,4 +38,8 @@ class HomeViewController: UIViewController {
             show(vc, sender: self)
         }
     }
+    
+    @IBAction func didTapClearCacheButton(_ sender: Any) {
+        CoreDataManager.shared.deleteAllData(entity: "UserList")
+    }
 }
