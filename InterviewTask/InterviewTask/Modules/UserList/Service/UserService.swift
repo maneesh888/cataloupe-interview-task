@@ -51,7 +51,7 @@ enum UserServiceFetchType {
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let list = try decoder.decode(UserList.self, from: data)
+                let list = try decoder.decode(UserListServerModel.self, from: data)
                 
                 successCompletion(list.results ?? [])
             } catch {
@@ -65,7 +65,7 @@ enum UserServiceFetchType {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(UserList.self, from: data)
+                let jsonData = try decoder.decode(UserListServerModel.self, from: data)
                 successCompletion(jsonData.results ?? [])
             } catch {
                 print("error:\(error)")

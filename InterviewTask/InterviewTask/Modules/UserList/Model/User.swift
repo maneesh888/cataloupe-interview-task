@@ -9,18 +9,18 @@ import Foundation
 
 
 // MARK: - UserList
-@objc class UserList:NSObject, Decodable {
-    let results: [User]?
+@objc class UserListServerModel:NSObject, Decodable {
+    let results: [UserServerModel]?
     //let info: Info?
 }
 
 // MARK: - User
-@objc class User: NSObject, Decodable {
+@objc class UserServerModel: NSObject, Decodable {
     var name: NameData?
     var email: String?
     let dob, registered: DateData?
     let id: ID?
-    let picture: Picture?
+    let picture: PictureServerModel?
     let nat: String?
     
     
@@ -43,7 +43,7 @@ struct NameData: Decodable {
 }
 
 // MARK: - Picture
-struct Picture: Decodable {
+struct PictureServerModel: Decodable {
     let large, medium, thumbnail: String?
 }
 
@@ -52,7 +52,7 @@ struct Picture: Decodable {
 
 
 
-@objc extension User: ListViewItem {
+@objc extension UserServerModel: ListViewItem {
 
     var cellType: UnsafeMutablePointer<ListViewCellType>! {
         return UnsafeMutablePointer<ListViewCellType>.init(bitPattern: ListViewCellType.user.rawValue)
