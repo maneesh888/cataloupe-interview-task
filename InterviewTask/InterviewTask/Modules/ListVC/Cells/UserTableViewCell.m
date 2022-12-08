@@ -24,7 +24,7 @@
 }
 -(void)setItem:(id<ListViewItem>_Nonnull)item{
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:item.imageUrl]
-                             placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+                             placeholderImage:[UIImage imageNamed:@"noImage"]];
     self.nameLabel.text = item.displayName;
     self.emailLabel.text = item.email;
     self.countryLabel.text = [NSString stringWithFormat:@"Country: %@", item.country];
